@@ -1,5 +1,10 @@
-import React, { Component } from "react";
-import './App.css';
+import React from "react";
+import { Layout } from "antd";
+import FooterContent from "./components/footer-content/footer-content";
+import MainContent from "./components/main-content/main-content";
+import HeaderContent from "./components/header-content/header-content";
+
+import './App.css'
 
 class App extends React.Component {
   state = {users: []}
@@ -12,12 +17,11 @@ class App extends React.Component {
 
   render() {
     return (
-        <div className="App">
-          <h1>Users</h1>
-          {this.state.users.map(user =>
-              <div key={user.id}>{user.username}</div>
-          )}
-        </div>
+        <Layout>
+            <HeaderContent />
+            <MainContent />
+            <FooterContent />
+        </Layout>
     );
   }
 }
