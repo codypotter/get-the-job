@@ -7,10 +7,10 @@ import './pipeline-step.scss'
  * @returns {JSX.Element}
  * @constructor
  */
-const PipelineStep = ({sizing}) => (
+const PipelineStep = ({sizing, title}) => (
     <div className="pipeline-step">
         <Cylinder  width={sizing} height="100%"/>
-        <h2 className="pipeline-step-title">Ready to Apply</h2>
+        <h2 className="pipeline-step-title">{title}</h2>
     </div>
 )
 

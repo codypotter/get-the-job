@@ -8,6 +8,16 @@ const initialState = {
                 company: "roku",
                 position: "Senior React Frontend Developer",
                 url: "https://www.roku.com/jobs/position/2979719/senior-react-frontend-developer?gh_jid=2979719"
+            },
+            {
+                company: "roku",
+                position: "Senior React Frontend Developer",
+                url: "https://www.roku.com/jobs/position/2979719/senior-react-frontend-developer?gh_jid=2979719"
+            },
+            {
+                company: "roku",
+                position: "Senior React Frontend Developer",
+                url: "https://www.roku.com/jobs/position/2979719/senior-react-frontend-developer?gh_jid=2979719"
             }
         ]
     },

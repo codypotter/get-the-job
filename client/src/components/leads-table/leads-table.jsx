@@ -29,7 +29,6 @@ const LeadsTable = ({leads}) => {
         <Table
             dataSource={dataSource}
             columns={columns}
-            showHeader={false}
             pagination={false}
         />
     )
