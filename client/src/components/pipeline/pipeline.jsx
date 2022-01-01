@@ -1,12 +1,12 @@
 import './pipeline.scss'
-import {ReactComponent as PipelineStep} from '../../assets/pipeline-step.svg'
+import PipelineStep from '../pipeline-step/pipeline-step'
 
 const Pipeline = () => (
     <div className="pipeline">
-        <PipelineStep className="step" style={{width: "100%"}}/>
-        <PipelineStep className="step" style={{width: "90%"}}/>
-        <PipelineStep className="step" style={{width: "80%"}}/>
-        <PipelineStep className="step" style={{width: "70%"}}/>
+        <PipelineStep sizing="100%"/>
+        <PipelineStep sizing="90%"/>
+        <PipelineStep sizing="80%"/>
+        <PipelineStep sizing="70%"/>
     </div>
 )
 

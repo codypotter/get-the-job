@@ -1,45 +1,38 @@
 import {Table} from 'antd'
 
-const dataSource = [
-    {
-        key: '1',
-        name: 'Mike',
-        age: 32,
-        address: '10 Downing Street',
-    },
-    {
-        key: '2',
-        name: 'John',
-        age: 42,
-        address: '10 Downing Street',
-    },
-];
-
 const columns = [
     {
-        title: 'Name',
-        dataIndex: 'name',
-        key: 'name',
+        title: 'Company',
+        dataIndex: 'company',
+        key: 'company',
     },
     {
-        title: 'Age',
-        dataIndex: 'age',
-        key: 'age',
+        title: 'Position',
+        dataIndex: 'position',
+        key: 'position',
     },
     {
-        title: 'Address',
-        dataIndex: 'address',
-        key: 'address',
+        title: 'URL',
+        dataIndex: 'url',
+        key: 'url',
     },
 ];
 
-const LeadsTable = () => (
-    <Table
-        dataSource={dataSource}
-        columns={columns}
-        showHeader={false}
-        pagination={false}
-    />
-)
+const LeadsTable = ({leads}) => {
+    let dataSource = leads.map((lead) => ({
+        key: lead.url,
+        company: lead.company,
+        position: lead.position,
+        url: lead.url
+    }))
+    return (
+        <Table
+            dataSource={dataSource}
+            columns={columns}
+            showHeader={false}
+            pagination={false}
+        />
+    )
+}
 
 export default LeadsTable

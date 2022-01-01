@@ -1,0 +1,19 @@
+.pipeline-step {
+  width: 100%;
+  display: grid;
+
+  svg {
+    grid-column: 1;
+    grid-row: 1;
+    display: block;
+    margin: auto;
+  }
+  .pipeline-step-title {
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    margin: auto;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+}
