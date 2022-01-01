@@ -19,8 +19,8 @@ const columns = [
 ];
 
 const LeadsTable = ({leads}) => {
-    let dataSource = leads.map((lead) => ({
-        key: lead.url,
+    let dataSource = leads.map((lead, index) => ({
+        key: index,
         company: lead.company,
         position: lead.position,
         url: lead.url
