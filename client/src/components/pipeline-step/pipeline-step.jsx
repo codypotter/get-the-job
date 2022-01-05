@@ -9,7 +9,7 @@ import './pipeline-step.scss'
  */
 const PipelineStep = ({sizing, title}) => (
     <div className="pipeline-step">
-        <Cylinder  width={sizing} height="100%"/>
+        <Cylinder width={sizing} height="100%"/>
         <h2 className="pipeline-step-title">{title}</h2>
     </div>
 )
